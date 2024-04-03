@@ -1,0 +1,99 @@
+.discounts {
+   background-image: url(../../../assets/images/discounts-bg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 120px 0;
+}
+
+@mixin title-style($font-size, $font-weight, $color) {
+   font-size: $font-size;
+   font-weight: $font-weight;
+   color: $color;
+}
+
+.discounts-wrapper {
+   display: flex;
+   gap: 0 136px;
+   align-items: start;
+}
+
+.discounts-box {
+   max-width: 648px;
+}
+
+.discounts-title {
+   @include title-style(48px, 700, #fff);
+   font-family: "Unbounded", sans-serif;
+   margin-bottom: 70px;
+}
+
+.discounts-subtitle {
+   @include title-style(28px, 700, #fff);
+   line-height: 36px;
+}
+
+.discounts-text {
+   @include title-style(18px, 700, hsla(0, 0%, 100%, 0.8));
+   margin-top: 36px;
+}
+
+.discounts-card {
+   border-radius: 20px;
+   overflow: hidden;
+   max-width: 536px;
+}
+
+.discounts-body {
+   display: flex;
+   justify-content: space-between;
+   padding: 40px;
+   background-color: white;
+}
+
+.discounts-text {
+   h3 {
+      @include title-style(20px, 700, #1f1f1f);
+      margin-bottom: 20px;
+   }
+   p {
+      color: #989898;
+      line-height: 26px;
+   }
+}
+
+.discounts-img {
+   position: relative;
+   img {
+      position: absolute;
+      top: -70px;
+      right: 20px;
+   }
+}
+
+.discounts-btns {
+   margin-top: 70px;
+   button {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      border: 2px solid #ffffff30;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-right: 14px;
+
+      &:hover {
+         background-color: #ffffff30;
+         border: 2px solid transparent;
+      }
+   }
+
+   span {
+      @include title-style(20px, 700, rgba(255, 255, 255, 0.4));
+      margin-left: 50px;
+      strong {
+         @include title-style(24px, 700, white);
+         font-family: "Unbounded", sans-serif;
+      }
+   }
+}

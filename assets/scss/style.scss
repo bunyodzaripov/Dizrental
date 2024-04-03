@@ -1,0 +1,38 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "PP Pangram Sans";
+}
+
+@font-face {
+   font-family: "PP Pangram Sans";
+   src: url(../fonts/PP\ Pangram\ Sans\ Rounded\ Exbold.woff2);
+}
+
+body {
+   background-color: #f4f4f4;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+.container {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 16px;
+   box-sizing: content-box;
+}
+
+@import "./blocks/navbar";
+@import "./blocks/hero";
+@import "./blocks/contact";
+@import "./blocks/blog";
+@import "./blocks/discounts";
+@import "./blocks/services";
+@import "./blocks/products";

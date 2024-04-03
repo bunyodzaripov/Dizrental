@@ -1,0 +1,47 @@
+.products {
+   padding: 120px 0;
+   margin-top: 135px;
+}
+
+@mixin title-style($font-size, $font-weight, $color) {
+   font-size: $font-size;
+   font-weight: $font-weight;
+   color: $color;
+}
+
+.products-title {
+   @include title-style(48px, 700, #1f1f1f);
+   display: flex;
+   gap: 0 40px;
+   align-items: center;
+   a {
+      @include title-style(13px, 700, #1f1f1f);
+      text-decoration: none;
+      padding: 12px 20px;
+      border: 3px solid black;
+      border-radius: 10px;
+   }
+}
+
+.products-filter {
+   display: flex;
+   font-weight: 700;
+   margin-top: 48px;
+   gap: 0 20px;
+   button {
+      display: flex;
+      gap: 0 20px;
+      align-items: center;
+      padding: 27px 30px;
+      border-radius: 10px;
+      color: #1f1f1f;
+      font-weight: 700;
+      border: none;
+      background-color: #fff;
+      cursor: pointer;
+
+      &:hover {
+         background-color: #eaeaea;
+      }
+   }
+}

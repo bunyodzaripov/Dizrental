@@ -1,0 +1,81 @@
+header {
+   background-color: #181818;
+}
+
+.navbar {
+   display: flex;
+   padding: 42px 0;
+   gap: 0 85px;
+   justify-content: center;
+   align-items: center;
+}
+
+.location-btn {
+   font-size: 11px;
+   font-weight: 700px;
+   color: #a6a6a6;
+   padding: 10px 13px;
+   border-radius: 6px;
+   background-color: #0c0c0c;
+   border: none;
+   cursor: pointer;
+}
+
+.location-btn > img {
+   margin-right: 10px;
+}
+
+.location-btn {
+   transition: 0.5s;
+   &:hover {
+      color: white;
+   }
+}
+
+.nav__list {
+   align-items: center;
+   display: flex;
+   gap: 0 50px;
+   a {
+      font-size: 15px;
+      font-weight: 500;
+      color: white;
+   }
+   li {
+      &:hover a {
+         transition: 0.5s;
+         color: #a6a6a6;
+      }
+   }
+}
+
+.nav__contact {
+   display: flex;
+   align-items: center;
+   .nav__contact-tel {
+      margin-right: 50px;
+   }
+   a {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      font-family: "Unbounded", sans-serif;
+   }
+}
+
+.nav__contact-btn {
+   font-size: 13px;
+   font-weight: 700;
+   color: #fff;
+   background-color: #181818;
+   border: 2px solid #a6a6a6;
+   padding: 12px 20px;
+   border-radius: 10px;
+   margin-left: 32px;
+   cursor: pointer;
+}
+
+.nav__user {
+   display: flex;
+   cursor: pointer;
+}

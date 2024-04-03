@@ -1,0 +1,40 @@
+.services {
+   padding: 120px 0;
+}
+
+@mixin title-style($font-size, $font-weight, $color) {
+   font-size: $font-size;
+   font-weight: $font-weight;
+   color: $color;
+}
+
+.services-title {
+   @include title-style(48px, 700, #1f1f1f);
+   margin-bottom: 60px;
+}
+
+.services-cards {
+   display: flex;
+   gap: 0 24px;
+}
+
+.services-card {
+   border-radius: 20px;
+   overflow: hidden;
+   max-width: 424px;
+}
+
+.services-body {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 42px;
+   max-width: 380px;
+}
+
+.services-text {
+   .blog-text {
+      h3 {
+         @include title-style(20px, 700, #1f1f1f);
+      }
+   }
+}
